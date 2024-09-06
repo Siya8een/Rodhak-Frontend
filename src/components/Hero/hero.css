@@ -1,0 +1,188 @@
+.hero {
+  display: flex;
+  height: 85vh;
+  margin-top: 2.5rem;
+  /* margin-bottom: 15rem; */
+}
+
+.left-h {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.hero-left-img {
+  position: relative;
+  bottom: -115px;
+}
+
+.hero-img {
+  height: 48rem;
+}
+
+.right-h {
+  margin-top: 5rem;
+  display: flex;
+  height: 92vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  display: none;
+}
+
+.hero-img-right {
+  height: 9rem;
+}
+
+.right-2 {
+  font-size: 3.5rem;
+  color: white;
+}
+.right-des {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.right-3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.hero-btn {
+  width: 15rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 100px;
+  color: #000;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+}
+
+.hero-btn-1 {
+  background-color: #2a5e38;
+  border: 2px solid #fbe284;
+}
+.hero-btn-2 {
+  background-color: #717171;
+  border: 2px solid #d9d9d9;
+}
+/* 
+.right-4 > :nth-child(1) {
+  display: block;
+} */
+
+.right-4 > :nth-child(1) > img {
+  width: 100%;
+  height: auto;
+}
+
+.right-4 {
+  display: flex;
+}
+.anim {
+  width: 100%; /* Make the image fill its container */
+  height: auto;
+  transform: translateY(50px);
+  animation: moveUpDown 2s infinite;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Hide .left-h on screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .left-h {
+    display: none;
+  }
+
+  .right-h {
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+  }
+
+  .hero {
+    flex-direction: column;
+    margin-top: -30%;
+    height: 90vh;
+  }
+
+  .right-4 {
+    flex-direction: column;
+  }
+
+  .right-2 {
+    font-size: 4rem;
+    color: white;
+  }
+
+  .hero-btn {
+    width: 10rem;
+    padding: 0.9rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 100px;
+    color: #fff;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+
+  .right-4 {
+    order: -3;
+  }
+
+  .right-2b {
+    order: -2;
+    font-size: 1rem;
+  }
+
+  .right-4 > :nth-child(2) {
+    display: none;
+  }
+
+  .right-2 {
+    order: -2;
+    line-height: 1;
+  }
+
+  .right-3 {
+    order: -1;
+  }
+
+  .right-des {
+    font-size: 1rem;
+  }
+
+  .right-2-text1 {
+    font-size: 3rem;
+  }
+  .right-1 {
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}

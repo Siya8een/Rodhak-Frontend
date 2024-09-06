@@ -1,0 +1,53 @@
+/* Sponsors.css */
+.sponsors-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  width: 1700px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 1rem;
+}
+
+.programs-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stroke-text {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12rem;
+  color: #fff;
+}
+
+.sponsor img {
+  height: 8rem;
+  margin-bottom: 0.5rem;
+}
+
+.sponsor h4 {
+  font-size: 1rem;
+  margin: 0;
+}

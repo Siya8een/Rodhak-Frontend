@@ -1,0 +1,38 @@
+/* Reason.css */
+.Reasons {
+  padding: 0 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.solutions-box {
+  border: 2px dotted #f48915;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.solutions-para {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Highlighting specific words */
+.solutions-para span.highlight {
+  color: #f48915;
+  font-weight: bold;
+  font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+/* Adjusting font size for smaller screens */
+@media screen and (max-width: 1200px) {
+  .solutions-para {
+    font-size: 1rem;
+  }
+  .solutions-para span.highlight {
+    font-size: 1.2rem;
+  }
+}
